@@ -1,0 +1,8 @@
+google-generativeai
+
+#For GitHub, we need to remove the actual key and change the code to use an environment variable instead.
+
+import os
+import google.generativeai as genai
+
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
